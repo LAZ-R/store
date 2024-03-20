@@ -65,28 +65,28 @@
     ------------------------------------------------------------------------ */
 
     /* --------------------------- header height --------------------------- */
-    --phone-header-height: 0dvh;
-    --tablet-header-height: 0dvh;
-    --laptop-header-height: 0dvh;
-    --desktop-header-height: 0dvh;
+    --phone-header-height: 0svh;
+    --tablet-header-height: 0svh;
+    --laptop-header-height: 0svh;
+    --desktop-header-height: 0svh;
     /* --------------------------------------------------------------------- */
     --header-height: var(--phone-header-height);
     /* --------------------------------------------------------------------- */
 
     /* ---------------------------- main height ---------------------------- */
-    --phone-main-height: 100dvh;
-    --tablet-main-height: 100dvh;
-    --laptop-main-height: 100dvh;
-    --desktop-main-height: 100dvh;
+    --phone-main-height: 100svh;
+    --tablet-main-height: 100svh;
+    --laptop-main-height: 100svh;
+    --desktop-main-height: 100svh;
     /* --------------------------------------------------------------------- */
     --main-height: var(--phone-main-height);
     /* --------------------------------------------------------------------- */
 
     /* --------------------------- footer height --------------------------- */
-    --phone-footer-height: 0dvh;
-    --tablet-footer-height: 0dvh;
-    --laptop-footer-height: 0dvh;
-    --desktop-footer-height: 0dvh;
+    --phone-footer-height: 0svh;
+    --tablet-footer-height: 0svh;
+    --laptop-footer-height: 0svh;
+    --desktop-footer-height: 0svh;
     /* --------------------------------------------------------------------- */
     --footer-height: var(--phone-footer-height);
     /* --------------------------------------------------------------------- */

@@ -32,7 +32,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     min-width: 100dvw; width: 100dvw; max-width: 100dvw;
-    min-height: 100dvh; height: 100dvh; max-height: 100dvh;
+    min-height: 100svh; height: 100svh; max-height: 100svh;
     padding: 0;
     margin: 0;
     background-color: var(--html-background-color);
@@ -275,7 +275,7 @@ input:checked + .slider:before {
     justify-content: flex-start;
     align-items: center;
     background-color: black;
-    gap: 5dvh;
+    gap: 5svh;
 
     h1 {
         margin: 0;
@@ -290,8 +290,8 @@ input:checked + .slider:before {
         width: 100%;
         height: fit-content;
         padding: 0 var(--horizontal-padding);
-        gap: 3dvh;
-        margin-bottom: 4dvh;
+        gap: 3svh;
+        margin-bottom: 4svh;
 
         /* &:last-child {
             margin-bottom: 0;
@@ -342,7 +342,7 @@ input:checked + .slider:before {
                 align-items: flex-start;
                 width: 100%;
                 height: fit-content;
-                padding: 1dvh 0;
+                padding: 1svh 0;
 
                 h2 {
                     margin: 0;

@@ -89,7 +89,7 @@ const getCategoriesContainers = () => {
 // Manuelle -----------------------------------------------
 setHTMLTitle(APP_NAME);
 document.getElementById('main').innerHTML = `
-  <img style="margin-top: 2dvh; height: 7dvh;" src="./medias/images/logo.png" />
+  <img style="margin-top: 2svh; height: 7svh;" src="./medias/images/logo.png" />
   <h1>PWA Store</h1>
   ${getCategoriesContainers()}
 `;
