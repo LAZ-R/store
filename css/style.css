@@ -1,0 +1,380 @@
+@import url("./variables.css");
+
+:root {
+    
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    user-select: none;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+p {
+    /* user-select: none; */
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/* ############################################################################
+------------------------------- MAIN CONTAINERS -------------------------------
+############################################################################ */
+
+html,
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 100dvw; width: 100dvw; max-width: 100dvw;
+    min-height: 100dvh; height: 100dvh; max-height: 100dvh;
+    padding: 0;
+    margin: 0;
+    background-color: var(--html-background-color);
+    color: var(--font-color-default);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: var(--header-height); height: var(--header-height); max-height: var(--header-height);
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--header-background-color);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: var(--main-height); height: var(--main-height); max-height: var(--main-height);
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: var(--footer-height); height: var(--footer-height); max-height: var(--footer-height);
+    min-width: 100%;
+    margin: 0;
+    padding: 0 var(--horizontal-padding);
+    background-color: var(--primary);
+    color: var(--primary-contrast);
+}
+
+/* ############################################################################
+--------------------------------- CLICKABLES ---------------------------------
+############################################################################ */
+
+/* -------------------------------- Anchors -------------------------------- */
+
+a {
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    color: var(--font-color-links);
+
+    &:hover {
+        text-decoration: underline;
+    }
+    
+    &:focus {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+/* -------------------------------- Buttons -------------------------------- */
+
+button {
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    border: none;
+    border-radius: var(--button-border-radius);
+    background-color: var(--gray-10);
+    padding: 2% 5% 2% 5%;
+    margin: 0;
+    font-size: var(--button-font-size);
+    flex-wrap: wrap;
+    color: var(--gray-80);
+
+    &:focus {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+    @media (hover:hover) and (pointer: fine) {
+        button:hover {
+            cursor: pointer;
+            background-color: var(--gray-20);
+        }
+    }
+
+/* -------------------------------- Switch -------------------------------- */
+
+/* The switch - the box around the slider */
+.switch {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: var(--gray-20);
+    -webkit-transition: .3s;
+    transition: .3s ease-out;
+
+    &:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px; bottom: 4px;
+        background-color: white;
+        -webkit-transition: .3s;
+        transition: .3s ease-out;
+    }
+}
+  
+  
+input:checked + .slider {
+    background-color: var(--primary);
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+
+    &:before {
+        border-radius: 50%;
+    }
+}
+  
+
+/* ############################################################################
+------------------------------------ MODAL ------------------------------------
+############################################################################ */
+
+.modal-background {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000000a4;
+    z-index: 50;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.modal-div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    height: 60%;
+    border-radius: 20px;
+    background-color: #1d1d1d;
+    overflow-y: scroll;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.modal-div::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.modal-div {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.modal-inner-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.modal-title {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* ############################################################################
+-------------------------------- MEDIA QUERIES --------------------------------
+############################################################################ */
+
+/* -------------------------------- Tablets -------------------------------- */
+
+@media (min-width : 767px) and (max-width : 1279px) {
+    /* ... */
+}
+
+/* -------------------------------- Laptops -------------------------------- */
+
+@media (min-width: 1280px) and (max-width: 1919px) {
+    /* ... */
+}
+
+/* -------------------------------- Desktops -------------------------------- */
+
+@media (min-width: 1920px) {
+    /* ... */
+}
+
+
+/* ---------------------------------------- APP SPECIFIC ---------------------------------------- */
+
+@font-face { font-family: "gendarmerie"; src: url("../medias/fonts/gendarmerie.woff") format("woff"); font-display: swap; }
+
+:root {
+}
+
+
+.main {
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    gap: 5dvh;
+
+    .category-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: fit-content;
+        padding: 0 var(--horizontal-padding);
+        gap: 3dvh;
+        margin-bottom: 4dvh;
+
+        /* &:last-child {
+            margin-bottom: 0;
+        } */
+
+        h1 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .pwa-bloc {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            height: fit-content;
+            padding: 0;
+            color: white;
+            background-color: transparent;
+
+            .pwa-img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 20dvw; width: 20dvw; max-width: 20dvw;
+                min-height: 20dvw; height: 20dvw; max-height: 20dvw;
+                margin-right: calc(var(--horizontal-padding) / 2);
+                -webkit-mask-image: url('../medias/images/icon-mask.png');
+                mask-image: url('../medias/images/icon-mask.png');
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+                -webkit-mask-position: center;
+                mask-position: center;
+                -webkit-mask-size: contain;
+                mask-size: contain;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .pwa-infos {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                width: 100%;
+                height: fit-content;
+                padding: 1dvh 0;
+
+                h2 {
+                    margin: 0;
+                    font-size: 16px;
+                }
+                
+                span {
+                    font-size: 14px;
+                }
+
+                div {
+                    --dot-size: 2dvw;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: baseline;
+                    gap: var(--dot-size);
+
+                    .dot {
+                        display: flex;
+                        min-width: var(--dot-size); width: var(--dot-size); max-width: var(--dot-size);
+                        min-height: var(--dot-size); height: var(--dot-size); max-height: var(--dot-size);
+                        background-color: white;
+                        border-radius: 500px;
+
+                        &.available {
+                            background-color: greenyellow;
+                        }
+                        &.limited {
+                            background-color: orange;
+                        }
+                        &.unavailable {
+                            background-color: orangered;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
