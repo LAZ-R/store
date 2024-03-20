@@ -42,7 +42,7 @@ window.addEventListener('resize', setDocumentHeight);
 
 export const setHTMLTitle = (pageTitle) => {
   document.getElementById('title').innerHTML = pageTitle;
-  document.getElementById('appleTitle').setAttribute('content', pageTitle);
+  //document.getElementById('appleTitle').setAttribute('content', pageTitle);
 }
 
 /* ############################################################################

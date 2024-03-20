@@ -277,6 +277,11 @@ input:checked + .slider:before {
     background-color: black;
     gap: 5dvh;
 
+    h1 {
+        margin: 0;
+        font-size: 22px;
+    }
+
     .category-container {
         display: flex;
         flex-direction: column;
@@ -349,7 +354,7 @@ input:checked + .slider:before {
                 }
 
                 div {
-                    --dot-size: 2dvw;
+                    --dot-size: 2.2dvw;
                     display: flex;
                     justify-content: flex-start;
                     align-items: baseline;
