@@ -275,11 +275,25 @@ input:checked + .slider:before {
     justify-content: flex-start;
     align-items: center;
     background-color: black;
-    gap: 5svh;
+    /* gap: 5svh; */
 
-    h1 {
-        margin: 0;
-        font-size: 22px;
+    .top-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        gap: 2svh;
+        padding: 2svh 0;
+
+        img {
+            height: 7svh;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 22px;
+        }
     }
 
     .category-container {
@@ -290,7 +304,7 @@ input:checked + .slider:before {
         width: 100%;
         height: fit-content;
         padding: 0 var(--horizontal-padding);
-        gap: 3svh;
+        gap: 2svh;
         margin-bottom: 4svh;
 
         /* &:last-child {
@@ -307,7 +321,7 @@ input:checked + .slider:before {
             flex-direction: row;
             flex-wrap: nowrap;
             justify-content: flex-start;
-            align-items: flex-start;
+            align-items: center;
             width: 100%;
             height: fit-content;
             padding: 0;
@@ -315,11 +329,12 @@ input:checked + .slider:before {
             background-color: transparent;
 
             .pwa-img {
+                --img-size: 18dvw;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                min-width: 20dvw; width: 20dvw; max-width: 20dvw;
-                min-height: 20dvw; height: 20dvw; max-height: 20dvw;
+                min-width: var(--img-size); width: var(--img-size); max-width: var(--img-size);
+                min-height: var(--img-size); height: var(--img-size); max-height: var(--img-size);
                 margin-right: calc(var(--horizontal-padding) / 2);
                 -webkit-mask-image: url('../medias/images/icon-mask.png');
                 mask-image: url('../medias/images/icon-mask.png');
@@ -343,14 +358,16 @@ input:checked + .slider:before {
                 width: 100%;
                 height: fit-content;
                 padding: 1svh 0;
+                gap: .5svh;
 
                 h2 {
                     margin: 0;
-                    font-size: 16px;
+                    margin-bottom: .2svh;
+                    font-size: 14px;
                 }
                 
                 span {
-                    font-size: 14px;
+                    font-size: 12px;
                 }
 
                 div {
@@ -368,7 +385,7 @@ input:checked + .slider:before {
                         border-radius: 500px;
 
                         &.available {
-                            background-color: greenyellow;
+                            background-color: #7dca35;
                         }
                         &.limited {
                             background-color: orange;

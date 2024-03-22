@@ -29,22 +29,9 @@ const getPwaBloc = (pwa) => {
         <h2>${pwa.name}</h2>
         <span>${pwa.desc}</span>
         <div>
-          <div class="dot ${
-            pwa.category == 'recommended' 
-            || pwa.category == 'tools' 
-            || pwa.category == 'games' 
-              ? 'available' 
-              : pwa.category == 'beta'
-                ? 'limited'
-                : 'unavailable'}"></div>
+          <div class="dot ${ pwa.state == 'available' ? 'available' : pwa.state == 'limited' ? 'limited' : 'unavailable' }"></div>
           <span>${
-            pwa.category == 'recommended' 
-            || pwa.category == 'tools' 
-            || pwa.category == 'games' 
-              ? 'fonctionnel' 
-              : pwa.category == 'beta'
-                ? 'limité'
-                : 'non-fonctionnel'}</span>
+            pwa.state == 'available' ? 'fonctionnel' : pwa.state == 'limited' ? 'Version bêta' : 'Accès anticipé: fonctionnalités limitées'}</span>
         </div>
       </div>
     </button>
@@ -89,7 +76,9 @@ const getCategoriesContainers = () => {
 // Manuelle -----------------------------------------------
 setHTMLTitle(APP_NAME);
 document.getElementById('main').innerHTML = `
-  <img style="margin-top: 2svh; height: 7svh;" src="./medias/images/logo.png" />
-  <h1>PWA Store</h1>
+  <div class="top-container">
+    <img src="./medias/images/store-icon.png" />
+    <h1>PWA Store</h1>
+  </div>
   ${getCategoriesContainers()}
 `;
