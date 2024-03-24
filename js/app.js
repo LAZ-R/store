@@ -31,7 +31,7 @@ const getPwaBloc = (pwa) => {
         <div>
           <div class="dot ${ pwa.state == 'available' ? 'available' : pwa.state == 'limited' ? 'limited' : 'unavailable' }"></div>
           <span>${
-            pwa.state == 'available' ? 'fonctionnel' : pwa.state == 'limited' ? 'Version bêta' : 'Accès anticipé: fonctionnalités limitées'}</span>
+            pwa.state == 'available' ? 'Utilisable' : pwa.state == 'limited' ? 'En développement - Version BETA' : 'Aperçu préliminaire'}</span>
         </div>
       </div>
     </button>
