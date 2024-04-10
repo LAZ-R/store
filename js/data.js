@@ -22,6 +22,14 @@ export const PWAs = [
     link: `https://laz-r.github.io/dinosaurs/`,
     state: `available`,
   },
+  {
+    icon: `3615`,
+    name: `3615 Blagues`,
+    desc: `Humour`,
+    category: `recommended`,
+    link: `https://laz-r.github.io/3615-blagues/`,
+    state: `available`,
+  },
 
   // Outils et utilitaires --------------------------------
   /* {

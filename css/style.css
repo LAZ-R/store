@@ -317,6 +317,7 @@ input:checked + .slider:before {
         }
 
         .pwa-bloc {
+            --img-size: 18dvw;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
@@ -329,7 +330,6 @@ input:checked + .slider:before {
             background-color: transparent;
 
             .pwa-img {
-                --img-size: 18dvw;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -359,11 +359,16 @@ input:checked + .slider:before {
                 height: fit-content;
                 padding: 1svh 0;
                 gap: .5svh;
+                text-align: start;
 
                 h2 {
                     margin: 0;
                     margin-bottom: .2svh;
                     font-size: 14px;
+                    /* max-width: calc(100% - ((var(--horizontal-padding) / 2) + (2 * var(--horizontal-padding)) + var(--img-size)));
+                    text-wrap: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; */
                 }
                 
                 span {
