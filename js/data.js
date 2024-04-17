@@ -32,20 +32,20 @@ export const PWAs = [
   },
 
   // Outils et utilitaires --------------------------------
-  /* {
-    icon: `geochronologia`,
-    name: `Geochronologia`,
-    desc: `Pédagogique`,
-    category: `tools`,
-    link: `https://laz-r.github.io/geochronologia/`,
-    state: `available`,
-  }, */
   {
     icon: `convertisseur`,
     name: `Switch it !`,
     desc: `Convertisseur`,
     category: `tools`,
     link: `https://laz-r.github.io/switch-it/`,
+    state: `available`,
+  },
+  {
+    icon: `geochronologia`,
+    name: `Géochronologia`,
+    desc: `Pédagogique`,
+    category: `tools`,
+    link: `https://laz-r.github.io/geochronologia/`,
     state: `available`,
   },
   {
