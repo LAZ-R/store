@@ -41,6 +41,14 @@ export const PWAs = [
     state: `available`,
   }, */
   {
+    icon: `convertisseur`,
+    name: `Switch it !`,
+    desc: `Convertisseur`,
+    category: `tools`,
+    link: `https://laz-r.github.io/switch-it/`,
+    state: `available`,
+  },
+  {
     icon: `colorhelper`,
     name: `Color Helper`,
     desc: `Assistant colorimétrique`,
