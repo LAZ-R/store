@@ -89,6 +89,14 @@ export const PWAs = [
     state: `available`,
   },
   {
+    icon: `speedmania`,
+    name: `Speedmania`,
+    desc: `Collection`,
+    category: `tools`,
+    link: `https://laz-r.github.io/speedmania/`,
+    state: `available`,
+  },
+  {
     icon: `tmnt`,
     name: `Tortues Ninja Punchlines`,
     desc: `Collection`,
