@@ -1,6 +1,7 @@
 export const CATEGORIES = [
   { id: `recommended`, label: 'Recommandations' },
   { id: `tools`, label: 'Outils et utilitaires' },
+  { id: `data`, label: 'Visualisation de données' },
   { id: `games`, label: 'Jeux' },
 ];
 
@@ -23,15 +24,23 @@ export const PWAs = [
     state: `available`,
   },
   {
-    icon: `3615`,
-    name: `3615 Blagues`,
-    desc: `Humour`,
+    icon: `recipes`,
+    name: `Les recettes de Clément`,
+    desc: `Restauration`,
     category: `recommended`,
-    link: `https://laz-r.github.io/3615-blagues/`,
+    link: `https://laz-r.github.io/recipes-dev/`,
     state: `available`,
   },
 
   // Outils et utilitaires --------------------------------
+  {
+    icon: `colorhelper`,
+    name: `Color Helper`,
+    desc: `Assistant colorimétrique`,
+    category: `tools`,
+    link: `https://laz-r.github.io/color-helper/`,
+    state: `available`,
+  },
   {
     icon: `convertisseur`,
     name: `Switch it !`,
@@ -46,14 +55,6 @@ export const PWAs = [
     desc: `Pédagogique`,
     category: `tools`,
     link: `https://laz-r.github.io/geochronologia/`,
-    state: `available`,
-  },
-  {
-    icon: `colorhelper`,
-    name: `Color Helper`,
-    desc: `Assistant colorimétrique`,
-    category: `tools`,
-    link: `https://laz-r.github.io/color-helper/`,
     state: `available`,
   },
   {
@@ -89,27 +90,45 @@ export const PWAs = [
     state: `available`,
   },
   {
-    icon: `speedmania`,
-    name: `Speedmania`,
-    desc: `Collection`,
+    icon: `gridArt`,
+    name: `Grid art`,
+    desc: `Art`,
     category: `tools`,
-    link: `https://laz-r.github.io/speedmania/`,
+    link: `https://laz-r.github.io/grid-art-dev/`,
+    state: `available`,
+  },
+
+  // Visualisation de données -----------------------------
+  {
+    icon: `voituresNeuves`,
+    name: `Voitures neuves 2023`,
+    desc: `Collection`,
+    category: `data`,
+    link: `https://laz-r.github.io/voitures-neuves-2023/`,
     state: `available`,
   },
   {
-    icon: `tmnt`,
-    name: `Tortues Ninja Punchlines`,
+    icon: `speedmania`,
+    name: `Speedmania`,
     desc: `Collection`,
-    category: `tools`,
-    link: `https://laz-r.github.io/tortues-ninja-punchlines/`,
-    state: `limited`,
+    category: `data`,
+    link: `https://laz-r.github.io/speedmania/`,
+    state: `available`,
   },
   {
     icon: `knus`,
     name: `Kitchen Nightmare (US)`,
     desc: `Collection`,
-    category: `tools`,
+    category: `data`,
     link: `https://laz-r.github.io/kn-us/`,
+    state: `limited`,
+  },
+  {
+    icon: `tmnt`,
+    name: `Tortues Ninja Punchlines`,
+    desc: `Collection`,
+    category: `data`,
+    link: `https://laz-r.github.io/tortues-ninja-punchlines/`,
     state: `limited`,
   },
   
@@ -184,6 +203,14 @@ export const PWAs = [
     desc: `Combat`,
     category: `games`,
     link: `https://laz-r.github.io/battles-dev/`,
+    state: `unavailable`,
+  },
+  {
+    icon: `3615`,
+    name: `3615 Blagues`,
+    desc: `Humour`,
+    category: `games`,
+    link: `https://laz-r.github.io/3615-blagues/`,
     state: `unavailable`,
   },
 ];
