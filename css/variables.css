@@ -96,10 +96,10 @@
     ------------------------------------------------------------------------ */
 
     /* --- horizontal padding --- */
-    --phone-horizontal-padding: 6.5dvw;
-    --tablet-horizontal-padding: 7dvw;
-    --laptop-horizontal-padding: 10dvw;
-    --desktop-horizontal-padding: 16dvw;
+    --phone-horizontal-padding: 6.5svw;
+    --tablet-horizontal-padding: 7svw;
+    --laptop-horizontal-padding: 10svw;
+    --desktop-horizontal-padding: 16svw;
     /* --------------------------------------------------------------------- */
     --horizontal-padding : var(--phone-horizontal-padding);
     /* --------------------------------------------------------------------- */

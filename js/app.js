@@ -21,7 +21,7 @@ window.goTo = goTo;
 
 const getPwaBloc = (pwa) => {
   return `
-    <button class="pwa-bloc" onclick="goTo('${pwa.link}')">
+    <a class="pwa-bloc" href="${pwa.link}">
       <div class="pwa-img">
         <img src="./medias/images/pwas/${pwa.icon}.png" />
       </div>
@@ -34,7 +34,7 @@ const getPwaBloc = (pwa) => {
             pwa.state == 'available' ? 'Utilisable' : pwa.state == 'limited' ? 'En développement - Version BETA' : 'Aperçu préliminaire'}</span>
         </div>
       </div>
-    </button>
+    </a>
   `;
 }
 

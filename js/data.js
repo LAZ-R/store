@@ -24,6 +24,30 @@ export const PWAs = [
     state: `available`,
   },
   {
+    icon: `sleep-2`,
+    name: `Sleepwave 2`,
+    desc: `Génération de scènes audio`,
+    category: `recommended`,
+    link: `https://laz-r.github.io/sleepwave-2-dev/`,
+    state: `available`,
+  },
+  {
+    icon: `monochrono2025`,
+    name: `Mono Chrono 2025`,
+    desc: `Chronomètre`,
+    category: `recommended`,
+    link: `https://laz-r.github.io/mono-chrono-2025/`,
+    state: `available`,
+  },
+  {
+    icon: `scoubidou`,
+    name: `Scoubidou generator`,
+    desc: `Génération de motifs`,
+    category: `recommended`,
+    link: `https://laz-r.github.io/scoubidou-generator/`,
+    state: `available`,
+  },
+  {
     icon: `recipes`,
     name: `Les recettes de Clément`,
     desc: `Restauration`,
@@ -33,6 +57,14 @@ export const PWAs = [
   },
 
   // Outils et utilitaires --------------------------------
+  {
+    icon: `urlhelper`,
+    name: `URL Helper`,
+    desc: `Assistant de lecture d'URL`,
+    category: `tools`,
+    link: `https://laz-r.github.io/url-helper/`,
+    state: `available`,
+  },
   {
     icon: `colorhelper`,
     name: `Color Helper`,
@@ -133,6 +165,22 @@ export const PWAs = [
   },
   
   // Jeux -------------------------------------------------
+  {
+    icon: `boat`,
+    name: `B.O.A.T`,
+    desc: `Jeu retro`,
+    category: `games`,
+    link: `https://laz-r.github.io/boat-dev/`,
+    state: `available`,
+  },
+  {
+    icon: `popup`,
+    name: `Pop-up killer`,
+    desc: `Clicker`,
+    category: `games`,
+    link: `https://laz-r.github.io/pop-up-killer/`,
+    state: `available`,
+  },
   {
     icon: `bingo`,
     name: `Bingo: Forces de l'Ordre`,

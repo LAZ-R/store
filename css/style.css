@@ -31,7 +31,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    min-width: 100dvw; width: 100dvw; max-width: 100dvw;
+    min-width: 100svw; width: 100svw; max-width: 100svw;
     min-height: 100svh; height: 100svh; max-height: 100svh;
     padding: 0;
     margin: 0;
@@ -306,6 +306,61 @@ input:checked + .slider:before {
         gap: 2svh;
         margin-bottom: 4svh;
 
+        /* Tablet */
+        @media (min-width : 767px) and (max-width : 1279px) { 
+            position: relative;
+            flex-direction: row;
+            max-width: 100%;
+            flex-wrap: wrap;
+            column-gap: 5%;
+            row-gap: 24px;
+            margin-bottom: 64px;
+
+            h1 {
+                position: absolute;
+                top: -32px;
+            }
+            .pwa-bloc {
+                max-width: 30%;
+            }
+         }
+        /* Laptop */
+        @media (min-width: 1280px) and (max-width: 1919px) { 
+            position: relative;
+            flex-direction: row;
+            max-width: 100%;
+            flex-wrap: wrap;
+            column-gap: 5%;
+            row-gap: 24px;
+            margin-bottom: 64px;
+
+            h1 {
+                position: absolute;
+                top: -32px;
+            }
+            .pwa-bloc {
+                max-width: 30%;
+            }
+         }
+        /* Desktop */
+        @media (min-width: 1920px) { 
+            position: relative;
+            flex-direction: row;
+            max-width: 100%;
+            flex-wrap: wrap;
+            column-gap: 5%;
+            row-gap: 24px;
+            margin-bottom: 64px;
+
+            h1 {
+                position: absolute;
+                top: -32px;
+            }
+            .pwa-bloc {
+                max-width: 30%;
+            }
+         }
+
         /* &:last-child {
             margin-bottom: 0;
         } */
@@ -317,7 +372,7 @@ input:checked + .slider:before {
         }
 
         .pwa-bloc {
-            --img-size: 18dvw;
+            --img-size: 18svw;
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
@@ -328,6 +383,19 @@ input:checked + .slider:before {
             padding: 0;
             color: #e4e4e4;
             background-color: transparent;
+            border-radius: 12px;
+
+            &:hover {
+                background-color: hsla(0, 0%, 100%, .05);
+                text-decoration: none;
+            }
+
+            /* Tablet */
+            @media (min-width : 767px) and (max-width : 1279px) { --img-size: 8svw; }
+            /* Laptop */
+            @media (min-width: 1280px) and (max-width: 1919px) { --img-size: 96px; }
+            /* Desktop */
+            @media (min-width: 1920px) { --img-size: 96px; }
 
             .pwa-img {
                 display: flex;
@@ -344,6 +412,13 @@ input:checked + .slider:before {
                 mask-position: center;
                 -webkit-mask-size: contain;
                 mask-size: contain;
+
+                /* Tablet */
+                @media (min-width : 767px) and (max-width : 1279px) { margin-right: 32px; }
+                /* Laptop */
+                @media (min-width: 1280px) and (max-width: 1919px) { margin-right: 32px; }
+                /* Desktop */
+                @media (min-width: 1920px) { margin-right: 32px; }
 
                 img {
                     max-width: 100%;
@@ -376,11 +451,18 @@ input:checked + .slider:before {
                 }
 
                 div {
-                    --dot-size: 2.2dvw;
+                    --dot-size: 2.2svw;
                     display: flex;
                     justify-content: flex-start;
-                    align-items: baseline;
+                    align-items: center;
                     gap: var(--dot-size);
+
+                    /* Tablet */
+                    @media (min-width : 767px) and (max-width : 1279px) { --dot-size: 16px; }
+                    /* Laptop */
+                    @media (min-width: 1280px) and (max-width: 1919px) { --dot-size: 16px; }
+                    /* Desktop */
+                    @media (min-width: 1920px) { --dot-size: 16px; }
 
                     .dot {
                         display: flex;
