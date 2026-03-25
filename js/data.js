@@ -3,6 +3,7 @@ export const CATEGORIES = [
   { id: `tools`, label: 'Outils et utilitaires' },
   { id: `data`, label: 'Visualisation de données' },
   { id: `games`, label: 'Jeux' },
+  { id: `misc`, label: 'Divers' },
 ];
 
 export const PWAs = [
@@ -40,11 +41,11 @@ export const PWAs = [
     state: `available`,
   },
   {
-    icon: `scoubidou`,
-    name: `Scoubidou generator`,
-    desc: `Génération de motifs`,
+    icon: `toolbox`,
+    name: `LAZ-R Dev Toolbox`,
+    desc: `Centralisation d'outils pour développeur front-end`,
     category: `recommended`,
-    link: `https://laz-r.github.io/scoubidou-generator/`,
+    link: `https://laz-r.github.io/lazr-dev-toolbox/`,
     state: `available`,
   },
   {
@@ -90,21 +91,21 @@ export const PWAs = [
     state: `available`,
   },
   {
-    icon: `vshelper`,
-    name: `Viewport-size Helper`,
-    desc: `Outil`,
+    icon: `scoubidou`,
+    name: `Scoubidou generator`,
+    desc: `Génération de motifs`,
     category: `tools`,
-    link: `https://laz-r.github.io/viewport-size-helper/`,
+    link: `https://laz-r.github.io/scoubidou-generator/`,
     state: `available`,
   },
-  {
+  /* {
     icon: `favorits`,
     name: `Favorits`,
     desc: `Gestion`,
     category: `tools`,
     link: `https://laz-r.github.io/favorits/`,
     state: `available`,
-  },
+  }, */
   {
     icon: `monochrono`,
     name: `Mono Chrono`,
@@ -116,17 +117,9 @@ export const PWAs = [
   {
     icon: `sleepwave`,
     name: `Sleepwave`,
-    desc: `Musique`,
+    desc: `Génération de scènes audio`,
     category: `tools`,
     link: `https://laz-r.github.io/sleepwave-dev/`,
-    state: `available`,
-  },
-  {
-    icon: `gridArt`,
-    name: `Grid art`,
-    desc: `Art`,
-    category: `tools`,
-    link: `https://laz-r.github.io/grid-art-dev/`,
     state: `available`,
   },
 
@@ -237,29 +230,39 @@ export const PWAs = [
     link: `https://laz-r.github.io/laramidia-3000-dev/`,
     state: `unavailable`,
   },
-  {
+  /* {
     icon: `pkrnd`,
     name: `PKRND`,
     desc: `Combat`,
     category: `games`,
     link: `https://laz-r.github.io/pkrnd/`,
     state: `unavailable`,
-  },
-  {
+  }, */
+  /* {
     icon: `battles`,
     name: `Battles`,
     desc: `Combat`,
     category: `games`,
     link: `https://laz-r.github.io/battles-dev/`,
     state: `unavailable`,
-  },
-  {
+  }, */
+  /* {
     icon: `3615`,
     name: `3615 Blagues`,
     desc: `Humour`,
     category: `games`,
     link: `https://laz-r.github.io/3615-blagues/`,
     state: `unavailable`,
+  }, */
+  
+  // Divers -----------------------------------------------
+  {
+    icon: `gridArt`,
+    name: `Grid art`,
+    desc: `Art`,
+    category: `misc`,
+    link: `https://laz-r.github.io/grid-art-dev/`,
+    state: `available`,
   },
 ];
 
